@@ -1,2 +1,4 @@
 #!/bin/bash
-cd -
+ls -lah
+ls -lah ..
+ls -lah ~
