@@ -1,2 +1,2 @@
 #!/bin/bash
-sed 1,1d $1 | awk '{print $1}' | sort -r | uniq -c | awk '{print $2}' | head -n 11 
+sed 1,1d $1 | awk '{print $1}' |uniq -c| awk '{print $2,$1}' |sort -t' ' -k999999,2rn | awk '{print $1}' | head -n 11  
